@@ -1,0 +1,10 @@
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\obj\Debug\GameMath.csprojAssemblyReference.cache
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\obj\Debug\GameMath.csproj.CoreCompileInputs.cache
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\bin\Debug\GameMath.dll
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\bin\Debug\GameMath.pdb
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\bin\Debug\GameMath.xml
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\obj\Debug\GameMath.csproj.CopyComplete
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\obj\Debug\GameMath.dll
+C:\Users\cfluder\source\repos\AFProjects-csgo\AFProjects-csgo\bin\Debug\GameMath.Net-master\GameMath.Net-master\GameMath.Numerics\GameMath\obj\Debug\GameMath.pdb

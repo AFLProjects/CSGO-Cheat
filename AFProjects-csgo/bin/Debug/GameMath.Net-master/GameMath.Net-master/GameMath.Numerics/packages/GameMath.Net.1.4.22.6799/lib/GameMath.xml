@@ -1,0 +1,2027 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GameMath</name>
+    </assembly>
+    <members>
+        <member name="T:GameMath.Library">
+            <summary>
+                Provides displayable information about this library.
+            </summary>
+        </member>
+        <member name="P:GameMath.Library.Author">
+            <summary>
+                Gets the author of this library.
+            </summary>
+            <value>
+                The name of the author.
+            </value>
+        </member>
+        <member name="P:GameMath.Library.Name">
+            <summary>
+                Gets the name of this library.
+            </summary>
+            <value>
+                The name of the library.
+            </value>
+        </member>
+        <member name="P:GameMath.Library.ProjectUrl">
+            <summary>
+                Gets the projects url.
+            </summary>
+            <value>
+                The projects url.
+            </value>
+        </member>
+        <member name="P:GameMath.Library.Version">
+            <summary>
+                Gets the version of this library.
+            </summary>
+            <value>
+                The version.
+            </value>
+        </member>
+        <member name="T:GameMath.Math2">
+            <summary>
+                Provides static methods for 2d math.
+            </summary>
+        </member>
+        <member name="M:GameMath.Math2.DistanceInCircle(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Calculates the distance of a point to the center of a circle.
+            </summary>
+            <param name="point">The point.</param>
+            <param name="circleCenter">The circle center.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math2.DistanceOnScreen(System.Single,System.Single,GameMath.Vector2)">
+            <summary>
+                Calculates the distance of a point to the center of the screen.
+            </summary>
+            <param name="X">The x.</param>
+            <param name="Y">The y.</param>
+            <param name="screen">The screen.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math2.DistanceOnScreen(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Calculates the distance of a point to the center of the screen.
+            </summary>
+            <param name="point">The point.</param>
+            <param name="screen">The screen.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math2.IsPointInCircle(GameMath.Vector2,GameMath.Vector2,System.Int32)">
+            <summary>
+                Determines whether a given point is inside of a circle.
+            </summary>
+            <param name="point">The point.</param>
+            <param name="circleCenter">The circle center.</param>
+            <param name="radius">The radius.</param>
+            <returns>
+                <c>true</c> if [is point in circle] [the specified point]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="T:GameMath.Math3">
+            <summary>
+                Provides static methods for 3d math.
+            </summary>
+        </member>
+        <member name="M:GameMath.Math3.AngleDifference(GameMath.Vector3,GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Calculates the difference of two angles.
+            </summary>
+            <param name="pointOfView">The point of view.</param>
+            <param name="angle_1">The first angle.</param>
+            <param name="angle_2">The second angle.</param>
+            <returns>Degree.</returns>
+        </member>
+        <member name="M:GameMath.Math3.AngleDifference(System.Single,GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Calculates the difference of two angles.
+            </summary>
+            <param name="distance">The distance of our view point.</param>
+            <param name="viewAngle">The first angle.</param>
+            <param name="targetAngle">The second angle.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.AngleLinearSmooth(GameMath.Vector3,GameMath.Vector3,System.Single)">
+            <summary>
+                Applies a linear smooth onto an angle.
+            </summary>
+            <param name="source">The source angle.</param>
+            <param name="dest">The destination angle.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.AngleVector(GameMath.Vector3)">
+            <summary>
+                Creates an angle from a vector.
+            </summary>
+            <param name="vec">The vector.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.CalcAngle(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Calculates the angle.
+            </summary>
+            <param name="source">The source position.</param>
+            <param name="dest">The destination position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.GetFov(GameMath.Vector3,GameMath.Vector3,System.Single)">
+            <summary>
+                Gets the fov.
+            </summary>
+            <param name="viewAngle">The view angle.</param>
+            <param name="targetAngle">The target angle.</param>
+            <param name="distance">The distance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.GetFov(GameMath.Vector3,GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Gets the fov.
+            </summary>
+            <param name="angle">The view angle.</param>
+            <param name="src">The origin.</param>
+            <param name="dst">The destination.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.VectorMid(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Returns the middle of two vector.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.VectorAngles(GameMath.Vector3)">
+            <summary>
+                Creates a vector from an angle
+            </summary>
+            <param name="forward">The forward (direction) vector.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.VectorTransform(GameMath.Vector3,GameMath.Matrix3x4)">
+            <summary>
+                Transfroms a vector
+            </summary>
+            <param name="vec">The vector.</param>
+            <param name="matrix">The matrix.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.VectorRotatePosition(GameMath.Vector3,GameMath.Vector3,System.Single)">
+            <summary>
+                Rotates a vector around a position
+            </summary>
+            <param name="targetOrigin">The target origin.</param>
+            <param name="positionToRotate">The position to rotate.</param>
+            <param name="rotationYaw">The rotation yaw.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.VectorYawRotate(GameMath.Vector3,GameMath.Vector3,GameMath.Vector3,System.Single)">
+            <summary>
+                Rotates a vectors yaw around a position
+            </summary>
+            <param name="targetOrigin">The target origin.</param>
+            <param name="positionToRotate">The position to rotate.</param>
+            <param name="targetAngle">The target angle.</param>
+            <param name="rotationYaw">The rotation yaw.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.WorldToScreen(GameMath.Matrix4x4,GameMath.Vector3,System.Single,System.Single)">
+            <summary>
+                Returns the position on screen
+            </summary>
+            <param name="viewMatrix">The view matrix.</param>
+            <param name="vec">The vector.</param>
+            <param name="screenX">The screen x.</param>
+            <param name="screenY">The screen y.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Math3.WorldToScreen(GameMath.Matrix4x4,GameMath.Vector3,GameMath.Vector2)">
+            <summary>
+                Returns the position on screen
+            </summary>
+            <param name="viewMatrix">The view matrix.</param>
+            <param name="vec">The vec.</param>
+            <param name="screen">The screen.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GameMath.MathF">
+            <summary>
+                Provides methods for float math
+            </summary>
+        </member>
+        <member name="F:GameMath.MathF.Pi">
+            <summary>
+                PI
+            </summary>
+        </member>
+        <member name="F:GameMath.MathF.Deg2Rad">
+            <summary>
+                DEG_2_RAD
+            </summary>
+        </member>
+        <member name="F:GameMath.MathF.Rad2Deg">
+            <summary>
+                RAD_2_DEG
+            </summary>
+        </member>
+        <member name="M:GameMath.MathF.Abs(System.Single)">
+            <summary>
+                Returns the absolute value
+            </summary>
+            <param name="x">value</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Acos(System.Single)">
+            <summary>
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Cos(System.Single)">
+            <summary>
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.IeeeRemainder(System.Single,System.Single)">
+            <summary>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Pow(System.Single,System.Single)">
+            <summary>
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Sin(System.Single)">
+            <summary>
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Sqrt(System.Single)">
+            <summary>
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Tan(System.Single)">
+            <summary>
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Clamp(System.Single,System.Single,System.Single)">
+            <summary>
+                Clamps the specified value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.DegreesToRadians(System.Single)">
+            <summary>
+                Degreeses to radians.
+            </summary>
+            <param name="deg">The deg.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Normalize(System.Single,System.Single,System.Single)">
+            <summary>
+                Normalizes the specified value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.Normalize(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+                Normalizes the specified value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="norm">The norm.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.RadiansToDegrees(System.Single)">
+            <summary>
+                Radianses to degrees.
+            </summary>
+            <param name="rad">The RAD.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.RandomFloat(System.Single,System.Single)">
+            <summary>
+                Random float.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.MathF.RandomInt(System.Int32,System.Int32)">
+            <summary>
+                Random int.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GameMath.Matrix3x4">
+            <summary>
+                Represents a 3x4 fields Matrix.
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M11">
+            <summary>
+                The M11
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M12">
+            <summary>
+                The M12
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M13">
+            <summary>
+                The M13
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M14">
+            <summary>
+                The M14
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M21">
+            <summary>
+                The M21
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M22">
+            <summary>
+                The M22
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M23">
+            <summary>
+                The M23
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M24">
+            <summary>
+                The M24
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M31">
+            <summary>
+                The M31
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M32">
+            <summary>
+                The M32
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M33">
+            <summary>
+                The M33
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix3x4.M34">
+            <summary>
+                The M34
+            </summary>
+        </member>
+        <member name="M:GameMath.Matrix3x4.GetLeft">
+            <summary>
+                Gets the left.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix3x4.GetRight">
+            <summary>
+                Gets the right.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix3x4.GetUp">
+            <summary>
+                Gets up.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix3x4.GetDown">
+            <summary>
+                Gets down.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix3x4.GetForward">
+            <summary>
+                Gets the forward.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix3x4.GetBackward">
+            <summary>
+                Gets the backward.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GameMath.Matrix4x4">
+            <summary>
+                Represents a 4x4 fields matrix
+            </summary>
+        </member>
+        <member name="P:GameMath.Matrix4x4.Identity">
+            <summary>
+                Gets the identity.
+            </summary>
+            <value>
+                The identity.
+            </value>
+        </member>
+        <member name="P:GameMath.Matrix4x4.IsIdentity">
+            <summary>
+                Gets a value indicating whether this instance is identity.
+            </summary>
+            <value>
+                <c>true</c> if this instance is identity; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:GameMath.Matrix4x4.Translation">
+            <summary>
+                Gets or sets the translation.
+            </summary>
+            <value>
+                The translation.
+            </value>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M11">
+            <summary>
+                The M11
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M12">
+            <summary>
+                The M12
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M13">
+            <summary>
+                The M13
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M14">
+            <summary>
+                The M14
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M21">
+            <summary>
+                The M21
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M22">
+            <summary>
+                The M22
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M23">
+            <summary>
+                The M23
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M24">
+            <summary>
+                The M24
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M31">
+            <summary>
+                The M31
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M32">
+            <summary>
+                The M32
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M33">
+            <summary>
+                The M33
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M34">
+            <summary>
+                The M34
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M41">
+            <summary>
+                The M41
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M42">
+            <summary>
+                The M42
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M43">
+            <summary>
+                The M43
+            </summary>
+        </member>
+        <member name="F:GameMath.Matrix4x4.M44">
+            <summary>
+                The M44
+            </summary>
+        </member>
+        <member name="M:GameMath.Matrix4x4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Matrix4x4" /> struct.
+            </summary>
+            <param name="m11">The M11.</param>
+            <param name="m12">The M12.</param>
+            <param name="m13">The M13.</param>
+            <param name="m14">The M14.</param>
+            <param name="m21">The M21.</param>
+            <param name="m22">The M22.</param>
+            <param name="m23">The M23.</param>
+            <param name="m24">The M24.</param>
+            <param name="m31">The M31.</param>
+            <param name="m32">The M32.</param>
+            <param name="m33">The M33.</param>
+            <param name="m34">The M34.</param>
+            <param name="m41">The M41.</param>
+            <param name="m42">The M42.</param>
+            <param name="m43">The M43.</param>
+            <param name="m44">The M44.</param>
+        </member>
+        <member name="M:GameMath.Matrix4x4.WorldToScreen(GameMath.Vector3,GameMath.Vector2)">
+            <summary>
+                Worlds to screen.
+            </summary>
+            <param name="vec">The vec.</param>
+            <param name="screenSize">Size of the screen.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.WorldToScreen(GameMath.Vector3,System.Single,System.Single)">
+            <summary>
+                Worlds to screen.
+            </summary>
+            <param name="vec">The vec.</param>
+            <param name="sizeX">The size x.</param>
+            <param name="sizeY">The size y.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.GetLeft">
+            <summary>
+                Gets the left.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.GetRight">
+            <summary>
+                Gets the right.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.GetUp">
+            <summary>
+                Gets up.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.GetDown">
+            <summary>
+                Gets down.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.GetForward">
+            <summary>
+                Gets the forward.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.GetBackward">
+            <summary>
+                Gets the backward.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Add(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Adds each element in one matrix with its corresponding element in a second matrix.</summary>
+            <param name="value1">The first matrix.</param>
+            <param name="value2">The second matrix.</param>
+            <returns>
+                The matrix that contains the summed values of <paramref name="value1">value1</paramref> and
+                <paramref name="value2">value2</paramref>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Subtract(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Subtracts each element in a second matrix from its corresponding element in a first matrix.</summary>
+            <param name="value1">The first matrix.</param>
+            <param name="value2">The second matrix.</param>
+            <returns>
+                The matrix containing the values that result from subtracting each element in
+                <paramref name="value2">value2</paramref> from its corresponding element in
+                <paramref name="value1">value1</paramref>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.CreateTranslation(GameMath.Vector3)">
+            <summary>Creates a translation matrix from the specified 3-dimensional vector.</summary>
+            <param name="position">The amount to translate in each axis.</param>
+            <returns>The translation matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Invert(GameMath.Matrix4x4,GameMath.Matrix4x4@)">
+            <summary>Inverts the specified matrix. The return value indicates whether the operation succeeded.</summary>
+            <param name="matrix">The matrix to invert.</param>
+            <param name="result">When this method returns, contains the inverted matrix if the operation succeeded.</param>
+            <returns>true if <paramref name="matrix">matrix</paramref> was converted successfully; otherwise,  false.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Lerp(GameMath.Matrix4x4,GameMath.Matrix4x4,System.Single)">
+            <summary>
+                Performs a linear interpolation from one matrix to a second matrix based on a value that specifies the
+                weighting of the second matrix.
+            </summary>
+            <param name="matrix1">The first matrix.</param>
+            <param name="matrix2">The second matrix.</param>
+            <param name="amount">The relative weighting of matrix2.</param>
+            <returns>The interpolated matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Multiply(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Returns the matrix that results from multiplying two matrices together.</summary>
+            <param name="value1">The first matrix.</param>
+            <param name="value2">The second matrix.</param>
+            <returns>The product matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Multiply(GameMath.Matrix4x4,System.Single)">
+            <summary>Returns the matrix that results from scaling all the elements of a specified matrix by a scalar factor.</summary>
+            <param name="value1">The matrix to scale.</param>
+            <param name="value2">The scaling value to use.</param>
+            <returns>The scaled matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Negate(GameMath.Matrix4x4)">
+            <summary>Negates the specified matrix by multiplying all its values by -1.</summary>
+            <param name="value">The matrix to negate.</param>
+            <returns>The negated matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Transpose(GameMath.Matrix4x4)">
+            <summary>Transposes the rows and columns of a matrix.</summary>
+            <param name="matrix">The matrix to transpose.</param>
+            <returns>The transposed matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.op_Addition(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Adds each element in one matrix with its corresponding element in a second matrix.</summary>
+            <param name="value1">The first matrix.</param>
+            <param name="value2">The second matrix.</param>
+            <returns>The matrix that contains the summed values.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.op_Equality(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Returns a value that indicates whether the specified matrices are equal.</summary>
+            <param name="value1">The first matrix to compare.</param>
+            <param name="value2">The second matrix to care</param>
+            <returns>
+                true if <paramref name="value1">value1</paramref> and <paramref name="value2">value2</paramref> are equal;
+                otherwise, false.
+            </returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.op_Inequality(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Returns a value that indicates whether the specified matrices are not equal.</summary>
+            <param name="value1">The first matrix to compare.</param>
+            <param name="value2">The second matrix to compare.</param>
+            <returns>
+                true if <paramref name="value1">value1</paramref> and <paramref name="value2">value2</paramref> are not equal;
+                otherwise, false.
+            </returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.op_Multiply(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Returns the matrix that results from multiplying two matrices together.</summary>
+            <param name="value1">The first matrix.</param>
+            <param name="value2">The second matrix.</param>
+            <returns>The product matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.op_Multiply(GameMath.Matrix4x4,System.Single)">
+            <summary>Returns the matrix that results from scaling all the elements of a specified matrix by a scalar factor.</summary>
+            <param name="value1">The matrix to scale.</param>
+            <param name="value2">The scaling value to use.</param>
+            <returns>The scaled matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.op_Subtraction(GameMath.Matrix4x4,GameMath.Matrix4x4)">
+            <summary>Subtracts each element in a second matrix from its corresponding element in a first matrix.</summary>
+            <param name="value1">The first matrix.</param>
+            <param name="value2">The second matrix.</param>
+            <returns>
+                The matrix containing the values that result from subtracting each element in
+                <paramref name="value2">value2</paramref> from its corresponding element in
+                <paramref name="value1">value1</paramref>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.op_UnaryNegation(GameMath.Matrix4x4)">
+            <summary>Negates the specified matrix by multiplying all its values by -1.</summary>
+            <param name="value">The matrix to negate.</param>
+            <returns>The negated matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.ToString">
+            <summary>Returns a string that represents this matrix.</summary>
+            <returns>The string representation of this matrix.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.GetHashCode">
+            <summary>Returns the hash code for this instance.</summary>
+            <returns>The hash code.</returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Equals(System.Object)">
+            <summary>Returns a value that indicates whether this instance and a specified object are equal.</summary>
+            <param name="obj">The object to compare with the current instance.</param>
+            <returns>
+                true if the current instance and <paramref name="obj">obj</paramref> are equal; otherwise, false. If
+                <paramref name="obj">obj</paramref> is null, the method returns false.
+            </returns>
+        </member>
+        <member name="M:GameMath.Matrix4x4.Equals(GameMath.Matrix4x4)">
+            <summary>Returns a value that indicates whether this instance and another 4x4 matrix are equal.</summary>
+            <param name="other">The other matrix.</param>
+            <returns>true if the two matrices are equal; otherwise, false.</returns>
+        </member>
+        <member name="T:GameMath.Vector2">
+            <summary>
+                Represents a 2 dimensional vector
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector2.Empty">
+            <summary>
+                Represents an ampty vector2
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector2.Invalid">
+            <summary>
+                Represents an invalid vector2
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector2.Size">
+            <summary>
+                The size of a vector2 in memory
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector2.X">
+            <summary>
+                The x
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector2.Y">
+            <summary>
+                The y
+            </summary>
+        </member>
+        <member name="P:GameMath.Vector2.Item(System.Int32)">
+            <summary>
+                Gets or sets the <see cref="T:System.Single" /> at the specified index.
+            </summary>
+            <value>
+                The <see cref="T:System.Single" />.
+            </value>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.#ctor(System.Single[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector2" /> struct.
+            </summary>
+            <param name="array">The array.</param>
+        </member>
+        <member name="M:GameMath.Vector2.#ctor(System.Single,System.Single)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector2" /> struct.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+        </member>
+        <member name="M:GameMath.Vector2.#ctor(System.Double,System.Double)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector2" /> struct.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+        </member>
+        <member name="M:GameMath.Vector2.#ctor(System.Int32,System.Int32)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector2" /> struct.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+        </member>
+        <member name="M:GameMath.Vector2.#ctor(System.Byte[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector2" /> struct.
+            </summary>
+            <param name="bytes">The bytes.</param>
+        </member>
+        <member name="M:GameMath.Vector2.#ctor(System.Int32)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector2" /> struct.
+            </summary>
+            <param name="dword">The dword.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Equals(System.Object)">
+            <summary>
+                Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+                <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.GetHashCode">
+            <summary>
+                Returns a hash code for this instance.
+            </summary>
+            <returns>
+                A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.ToString">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+                A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.Add(GameMath.Vector2)">
+            <summary>
+                Adds the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Add(System.Single)">
+            <summary>
+                Adds the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Add(System.Int32)">
+            <summary>
+                Adds the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Subtract(GameMath.Vector2)">
+            <summary>
+                Subtracts the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Subtract(System.Single)">
+            <summary>
+                Subtracts the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Subtract(System.Int32)">
+            <summary>
+                Subtracts the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Multiply(GameMath.Vector2)">
+            <summary>
+                Multiplies the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Multiply(System.Single)">
+            <summary>
+                Multiplies the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Multiply(System.Int32)">
+            <summary>
+                Multiplies the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Divide(GameMath.Vector2)">
+            <summary>
+                Divides the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Divide(System.Single)">
+            <summary>
+                Divides the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Divide(System.Int32)">
+            <summary>
+                Divides the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector2.Clone">
+            <summary>
+                Clones this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.Clear">
+            <summary>
+                Clears this instance.
+            </summary>
+        </member>
+        <member name="M:GameMath.Vector2.DistanceTo(GameMath.Vector2)">
+            <summary>
+                Distances to.
+            </summary>
+            <param name="vec">The vec.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.DotProduct(GameMath.Vector2)">
+            <summary>
+                Dots the product.
+            </summary>
+            <param name="vec">The vec.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.CrossProduct(GameMath.Vector2)">
+            <summary>
+                Crosses the product.
+            </summary>
+            <param name="vec">The vec.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.GetBytes">
+            <summary>
+                Gets the bytes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.Length">
+            <summary>
+                Returns the vecors length
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.IsEmpty">
+            <summary>
+                Determines whether this instance is empty.
+            </summary>
+            <returns>
+                <c>true</c> if this instance is empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.RealIsEmpty">
+            <summary>
+                Reals the is empty.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.IsNaN">
+            <summary>
+                Determines whether [is na n].
+            </summary>
+            <returns>
+                <c>true</c> if [is na n]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.IsInfinity">
+            <summary>
+                Determines whether this instance is infinity.
+            </summary>
+            <returns>
+                <c>true</c> if this instance is infinity; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.IsValid">
+            <summary>
+                Returns true if ... is valid.
+            </summary>
+            <returns>
+                <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Addition(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator +.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Addition(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator +.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Addition(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator +.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Subtraction(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator -.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Subtraction(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator -.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Subtraction(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator -.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Multiply(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator *.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Multiply(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator *.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Multiply(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator *.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Division(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator /.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Division(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator /.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Division(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator /.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Equality(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Equality(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Equality(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Inequality(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Inequality(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_Inequality(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_LessThan(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_LessThan(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_LessThan(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_GreaterThan(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_GreaterThan(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_GreaterThan(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_LessThanOrEqual(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_LessThanOrEqual(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_LessThanOrEqual(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_GreaterThanOrEqual(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_GreaterThanOrEqual(GameMath.Vector2,System.Single)">
+            <summary>
+                Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.op_GreaterThanOrEqual(GameMath.Vector2,System.Int32)">
+            <summary>
+                Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector2.Distance(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Distances the specified left.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.DotProduct(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Dots the product.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector2.CrossProduct(GameMath.Vector2,GameMath.Vector2)">
+            <summary>
+                Crosses the product.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="T:GameMath.Vector3">
+            <summary>
+                Represents a 3 dimensional vector
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector3.Empty">
+            <summary>
+                The empty
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector3.Zero">
+            <summary>
+                The zero
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector3.Invalid">
+            <summary>
+                The invalid
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector3.Size">
+            <summary>
+                The size
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector3.X">
+            <summary>
+                The x
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector3.Y">
+            <summary>
+                The y
+            </summary>
+        </member>
+        <member name="F:GameMath.Vector3.Z">
+            <summary>
+                The z
+            </summary>
+        </member>
+        <member name="P:GameMath.Vector3.Item(System.Int32)">
+            <summary>
+                Gets or sets the <see cref="T:System.Single" /> at the specified index.
+            </summary>
+            <value>
+                The <see cref="T:System.Single" />.
+            </value>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector3" /> struct.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="z">The z.</param>
+        </member>
+        <member name="M:GameMath.Vector3.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector3" /> struct.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="z">The z.</param>
+        </member>
+        <member name="M:GameMath.Vector3.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector3" /> struct.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="z">The z.</param>
+        </member>
+        <member name="M:GameMath.Vector3.#ctor(System.Single[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector3" /> struct.
+            </summary>
+            <param name="array">The array.</param>
+        </member>
+        <member name="M:GameMath.Vector3.#ctor(System.Byte[])">
+            <summary>
+                Initializes a new instance of the <see cref="T:GameMath.Vector3" /> struct.
+            </summary>
+            <param name="array">The array.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Equals(System.Object)">
+            <summary>
+                Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+                <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.GetHashCode">
+            <summary>
+                Returns a hash code for this instance.
+            </summary>
+            <returns>
+                A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.ToString">
+            <summary>
+                Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+                A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.Add(GameMath.Vector3)">
+            <summary>
+                Adds the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Add(System.Single)">
+            <summary>
+                Adds the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Add(System.Int32)">
+            <summary>
+                Adds the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Subtract(GameMath.Vector3)">
+            <summary>
+                Subtracts the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Subtract(System.Single)">
+            <summary>
+                Subtracts the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Subtract(System.Int32)">
+            <summary>
+                Subtracts the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Multiply(GameMath.Vector3)">
+            <summary>
+                Multiplies the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Multiply(System.Single)">
+            <summary>
+                Multiplies the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Multiply(System.Int32)">
+            <summary>
+                Multiplies the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Divide(GameMath.Vector3)">
+            <summary>
+                Divides the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Divide(System.Single)">
+            <summary>
+                Divides the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Divide(System.Int32)">
+            <summary>
+                Divides the specified vec.
+            </summary>
+            <param name="vec">The vec.</param>
+        </member>
+        <member name="M:GameMath.Vector3.Clone">
+            <summary>
+                Clones this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.Clear">
+            <summary>
+                Clears this instance.
+            </summary>
+        </member>
+        <member name="M:GameMath.Vector3.DistanceTo(GameMath.Vector3)">
+            <summary>
+                Distances to.
+            </summary>
+            <param name="vec">The vec.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.Length">
+            <summary>
+                Lengthes this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.LengthSquared">
+            <summary>
+                Lengthes the squared.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.DotProduct(GameMath.Vector3)">
+            <summary>
+                Dots the product.
+            </summary>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.CrossProduct(GameMath.Vector3)">
+            <summary>
+                Crosses the product.
+            </summary>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.Lerp(GameMath.Vector3,System.Single)">
+            <summary>
+                Lerps the specified right.
+            </summary>
+            <param name="right">The right.</param>
+            <param name="amount">The amount.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.GetBytes">
+            <summary>
+                Gets the bytes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.IsEmpty">
+            <summary>
+                Determines whether this instance is empty.
+            </summary>
+            <returns>
+                <c>true</c> if this instance is empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.RealIsEmpty">
+            <summary>
+                Reals the is empty.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.IsNaN">
+            <summary>
+                Determines whether [is na n].
+            </summary>
+            <returns>
+                <c>true</c> if [is na n]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.IsInfinity">
+            <summary>
+                Determines whether this instance is infinity.
+            </summary>
+            <returns>
+                <c>true</c> if this instance is infinity; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.IsValid">
+            <summary>
+                Returns true if ... is valid.
+            </summary>
+            <returns>
+                <c>true</c> if this instance is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleClamp">
+            <summary>
+                Angles the clamp.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleClamp(System.Single,System.Single)">
+            <summary>
+                Angles the clamp.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleNormalize">
+            <summary>
+                Angles the normalize.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleNormalize(System.Single,System.Single,System.Single)">
+            <summary>
+                Angles the normalize.
+            </summary>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="norm">The norm.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleClampAndNormalize">
+            <summary>
+                Angles the clamp and normalize.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.VectorNormalize">
+            <summary>
+                Vectors the normalize.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Addition(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator +.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Addition(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator +.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Addition(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator +.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Subtraction(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator -.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Subtraction(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator -.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Subtraction(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator -.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Multiply(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator *.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Multiply(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator *.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Multiply(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator *.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Division(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator /.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Division(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator /.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Division(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator /.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Equality(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Equality(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Equality(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Inequality(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Inequality(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_Inequality(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_LessThan(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_LessThan(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_LessThan(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_GreaterThan(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_GreaterThan(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_GreaterThan(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_LessThanOrEqual(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_LessThanOrEqual(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_LessThanOrEqual(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_GreaterThanOrEqual(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_GreaterThanOrEqual(GameMath.Vector3,System.Single)">
+            <summary>
+                Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.op_GreaterThanOrEqual(GameMath.Vector3,System.Int32)">
+            <summary>
+                Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+                The result of the operator.
+            </returns>
+        </member>
+        <member name="M:GameMath.Vector3.Distance(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Distances the specified left.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.DotProduct(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Dots the product.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.CrossProduct(GameMath.Vector3,GameMath.Vector3)">
+            <summary>
+                Crosses the product.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.Lerp(GameMath.Vector3,GameMath.Vector3,System.Single)">
+            <summary>
+                Lerps the specified left.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <param name="amount">The amount.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleClamp(GameMath.Vector3)">
+            <summary>
+                Angles the clamp.
+            </summary>
+            <param name="vec">The vec.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleClamp(GameMath.Vector3,System.Single,System.Single)">
+            <summary>
+                Angles the clamp.
+            </summary>
+            <param name="vec">The vec.</param>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleNormalize(GameMath.Vector3)">
+            <summary>
+                Angles the normalize.
+            </summary>
+            <param name="vec">The vec.</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameMath.Vector3.AngleNormalize(GameMath.Vector3,System.Single,System.Single,System.Single)">
+            <summary>
+                Angles the normalize.
+            </summary>
+            <param name="vec">The vec.</param>
+            <param name="min">The minimum.</param>
+            <param name="max">The maximum.</param>
+            <param name="norm">The norm.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
