@@ -6,7 +6,7 @@ It's basically an app that acces csgo process and use AFMemory to modify the dat
 AFMemory*(Project made by me)* : 
 
 # What i learned
--accessing process modules
--getting and setting data inside process
--making User Interface
--Using user32.dll library
+* -accessing process modules
+* -getting and setting data inside process
+* -making User Interface
+* -Using user32.dll library
