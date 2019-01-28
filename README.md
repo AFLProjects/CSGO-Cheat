@@ -3,7 +3,7 @@
 * It's basically an app that acces csgo process and use AFMemory to modify the data using hex addresses.
 
 # Links
-AFMemory *(Project made by me)* : https://github.com/AFLProjects/AFMemory
+AFMemory **(Project made by me)** : https://github.com/AFLProjects/AFMemory
 
 # What i learned
 * -accessing process modules
